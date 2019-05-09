@@ -1,0 +1,2 @@
+const thumbs=document.getElementById('close-tak-it'),cards=document.querySelectorAll('div.card img');thumbs.onclick=function(){this.parentElement.style.display="none"}
+cards.forEach(card=>{card.onclick=function(){thumbs.parentElement.style.display="flex";thumbs.nextElementSibling.setAttribute('src',card.getAttribute('src'))}})
